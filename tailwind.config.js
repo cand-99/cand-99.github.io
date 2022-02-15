@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'jit',
-  content: ["./index.html"],
+  content: ["index.html"],
   theme: {
     
     container: {
