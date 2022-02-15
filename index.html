@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
+<html lang="en" data-theme="mytheme" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,439 @@
     <title>Document</title>
     <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body>
-    <h1 class="bg-red-300 p-4">halsdsadsadlo</h1>
+<body class="bg-black">
+   
+    <div class="container mx-auto h-screen">
+        <div class="flex justify-center">
+            <!-- left -->
+            <div class="w-68 xs:w-88 xl:w-275 h-screen">
+            <div class="flex flex-col h-screen xl:pr-3 fixed overflow-y-auto w-68 xs:w-88 xl:w-275">
+                <!-- Sidebar -->
+                <nav class="space-y-3 ml-3">
+                    <div>
+                        <!-- logo -->
+                    <button href="#" class="hover:bg-primary/10 hover:rounded-full p-2 " >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9" viewBox="0 0 24 24" fill="currentColor">
+                            <path   d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z ">
+                            </svg>
+                    </button>
+                        </div> 
+                <!-- icon -->
+                    <div class="">
+                        <button href="#" class="flex hover:bg-base-200 hover:rounded-full p-2 pr-6  space-x-5 items-center"> 
+                        <div class="indicator flex items-center">
+                            <div class="indicator-item badge badge-primary text-[10px] p-[3px] h-[3px] w-1">
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6.5 w-6.5 my-auto flex items-center mb-1 " viewBox="0 0 24 24" fill="currentColor">
+                                <path  d="M22.58 7.35L12.475 1.897c-.297-.16-.654-.16-.95 0L1.425 7.35c-.486.264-.667.87-.405 1.356.18.335.525.525.88.525.16 0 .324-.038.475-.12l.734-.396 1.59 11.25c.216 1.214 1.31 2.062 2.66 2.062h9.282c1.35 0 2.444-.848 2.662-2.088l1.588-11.225.737.398c.485.263 1.092.082 1.354-.404.263-.486.08-1.093-.404-1.355zM12 15.435c-1.795 0-3.25-1.455-3.25-3.25s1.455-3.25 3.25-3.25 3.25 1.455 3.25 3.25-1.455 3.25-3.25 3.25z">
+                                </svg>
+                        </div>
+                                <h1 class="font-bold text-xl mb-1 ">Home</h1>
+                        </button>
+                    </div> 
+                <!-- icon -->
+                    <div>
+                        <button href="#" class="flex hover:bg-base-200 hover:rounded-full p-2 pr-6  space-x-5 items-center">
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6.5 w-6.5 "><g><path d="M21 7.337h-3.93l.372-4.272c.036-.412-.27-.775-.682-.812-.417-.03-.776.27-.812.683l-.383 4.4h-6.32l.37-4.27c.037-.413-.27-.776-.68-.813-.42-.03-.777.27-.813.683l-.382 4.4H3.782c-.414 0-.75.337-.75.75s.336.75.75.75H7.61l-.55 6.327H3c-.414 0-.75.336-.75.75s.336.75.75.75h3.93l-.372 4.272c-.036.412.27.775.682.812l.066.003c.385 0 .712-.295.746-.686l.383-4.4h6.32l-.37 4.27c-.036.413.27.776.682.813l.066.003c.385 0 .712-.295.746-.686l.382-4.4h3.957c.413 0 .75-.337.75-.75s-.337-.75-.75-.75H16.39l.55-6.327H21c.414 0 .75-.336.75-.75s-.336-.75-.75-.75zm-6.115 7.826h-6.32l.55-6.326h6.32l-.55 6.326z"></path></g></svg>
+                                <h1 class="font-normal text-xl mb-1 ">Explore</h1>
+                        </button>
+                    </div> 
+                    
+                <!-- icon -->
+                    <div>
+                        <button href="#" class="flex hover:bg-base-200 hover:rounded-full p-2 pr-6  space-x-5 items-center">
+                            <div class=" indicator">
+                                <div class="indicator-item badge badge-primary font-semibold text-[8px] p-1 h-4 w-4">1</div> 
+                                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6.5 w-6.5"><g><path d="M21.697 16.468c-.02-.016-2.14-1.64-2.103-6.03.02-2.532-.812-4.782-2.347-6.335C15.872 2.71 14.01 1.94 12.005 1.93h-.013c-2.004.01-3.866.78-5.242 2.174-1.534 1.553-2.368 3.802-2.346 6.334.037 4.33-2.02 5.967-2.102 6.03-.26.193-.366.53-.265.838.102.308.39.515.712.515h4.92c.102 2.31 1.997 4.16 4.33 4.16s4.226-1.85 4.327-4.16h4.922c.322 0 .61-.206.71-.514.103-.307-.003-.645-.263-.838zM12 20.478c-1.505 0-2.73-1.177-2.828-2.658h5.656c-.1 1.48-1.323 2.66-2.828 2.66zM4.38 16.32c.74-1.132 1.548-3.028 1.524-5.896-.018-2.16.644-3.982 1.913-5.267C8.91 4.05 10.397 3.437 12 3.43c1.603.008 3.087.62 4.18 1.728 1.27 1.285 1.933 3.106 1.915 5.267-.024 2.868.785 4.765 1.525 5.896H4.38z"></path></g></svg>
+                              </div>
+                                <h1 class="font-normal text-xl mb-1 ">Notifications</h1>
+                                  
+                        </button>
+                    </div> 
+                    
+                <!-- icon -->
+                    <div>
+                        <button href="#" class="flex hover:bg-base-200 hover:rounded-full p-2 pr-6  space-x-5 items-center">
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6.5 w-6.5"><g><path d="M19.25 3.018H4.75C3.233 3.018 2 4.252 2 5.77v12.495c0 1.518 1.233 2.753 2.75 2.753h14.5c1.517 0 2.75-1.235 2.75-2.753V5.77c0-1.518-1.233-2.752-2.75-2.752zm-14.5 1.5h14.5c.69 0 1.25.56 1.25 1.25v.714l-8.05 5.367c-.273.18-.626.182-.9-.002L3.5 6.482v-.714c0-.69.56-1.25 1.25-1.25zm14.5 14.998H4.75c-.69 0-1.25-.56-1.25-1.25V8.24l7.24 4.83c.383.256.822.384 1.26.384.44 0 .877-.128 1.26-.383l7.24-4.83v10.022c0 .69-.56 1.25-1.25 1.25z"></path></g></svg>
+                                <h1 class="font-normal text-xl mb-1 ">Messages</h1>
+                        </button>
+                    </div> 
+                 
+                <!-- icon -->
+                    <div>
+                        <button href="#" class="flex hover:bg-base-200 hover:rounded-full p-2 pr-6  space-x-5 items-center">  
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6.5 h-6.5"><g><path d="M19.9 23.5c-.157 0-.312-.05-.442-.144L12 17.928l-7.458 5.43c-.228.164-.53.19-.782.06-.25-.127-.41-.385-.41-.667V5.6c0-1.24 1.01-2.25 2.25-2.25h12.798c1.24 0 2.25 1.01 2.25 2.25v17.15c0 .282-.158.54-.41.668-.106.055-.223.082-.34.082zM12 16.25c.155 0 .31.048.44.144l6.71 4.883V5.6c0-.412-.337-.75-.75-.75H5.6c-.413 0-.75.338-.75.75v15.677l6.71-4.883c.13-.096.285-.144.44-.144z"></path></g></svg>
+                                <h1 class="font-normal text-xl mb-1 ">Bookmarks</h1>
+                        </button>
+                    </div> 
+                  
+                <!-- icon -->
+                    <div>
+                        <button href="#" class="flex hover:bg-base-200 hover:rounded-full p-2 pr-6  space-x-5 items-center">
+                                <svg fill="currentColor" viewBox="0 0 24 24" class="h-7 w-7">
+                                    <g>
+                                      <path d="M19.75 22H4.25C3.01 22 2 20.99 2 19.75V4.25C2 3.01 3.01 2 4.25 2h15.5C20.99 2 22 3.01 22 4.25v15.5c0 1.24-1.01 2.25-2.25 2.25zM4.25 3.5c-.414 0-.75.337-.75.75v15.5c0 .413.336.75.75.75h15.5c.414 0 .75-.337.75-.75V4.25c0-.413-.336-.75-.75-.75H4.25z"></path>
+                                      <path d="M17 8.64H7c-.414 0-.75-.337-.75-.75s.336-.75.75-.75h10c.414 0 .75.335.75.75s-.336.75-.75.75zm0 4.11H7c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h10c.414 0 .75.336.75.75s-.336.75-.75.75zm-5 4.11H7c-.414 0-.75-.335-.75-.75s.336-.75.75-.75h5c.414 0 .75.337.75.75s-.336.75-.75.75z"></path>
+                                    </g>
+                                  </svg>
+                                
+                                <h1 class="font-normal text-xl mb-1 ">Lists</h1>
+                        </button>
+                    </div> 
+                  
+                <!-- icon -->
+                    <div>
+                        <button href="#" class="flex hover:bg-base-200 hover:rounded-full p-2 pr-6  space-x-5 items-center">
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6.5 h-6.5"><g><path d="M12 11.816c1.355 0 2.872-.15 3.84-1.256.814-.93 1.078-2.368.806-4.392-.38-2.825-2.117-4.512-4.646-4.512S7.734 3.343 7.354 6.17c-.272 2.022-.008 3.46.806 4.39.968 1.107 2.485 1.256 3.84 1.256zM8.84 6.368c.162-1.2.787-3.212 3.16-3.212s2.998 2.013 3.16 3.212c.207 1.55.057 2.627-.45 3.205-.455.52-1.266.743-2.71.743s-2.255-.223-2.71-.743c-.507-.578-.657-1.656-.45-3.205zm11.44 12.868c-.877-3.526-4.282-5.99-8.28-5.99s-7.403 2.464-8.28 5.99c-.172.692-.028 1.4.395 1.94.408.52 1.04.82 1.733.82h12.304c.693 0 1.325-.3 1.733-.82.424-.54.567-1.247.394-1.94zm-1.576 1.016c-.126.16-.316.246-.552.246H5.848c-.235 0-.426-.085-.552-.246-.137-.174-.18-.412-.12-.654.71-2.855 3.517-4.85 6.824-4.85s6.114 1.994 6.824 4.85c.06.242.017.48-.12.654z"></path></g></svg>
+                                <h1 class="font-normal text-xl mb-1 ">Profile</h1>
+                        </button>
+                    </div> 
+                <!-- icon -->
+                    <div>
+                        <button href="#" class="flex hover:bg-base-200 hover:rounded-full p-2 pr-6  space-x-5 items-center">
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6.5 w-6.5"><g><circle cx="17" cy="12" r="1.5"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="7" cy="12" r="1.5"></circle><path d="M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z"></path></g></svg>
+                                <h1 class="font-normal text-xl mb-1 ">More</h1>
+                        </button>
+                    </div> 
+                    <!-- /Sidebar -->
+                    <!-- button -->
+                    <button class="btn btn-primary capitalize text-[17px] font-bold rounded-full w-11/12">Tweet</button>
+                  
+                </nav> 
+                <!-- Profile User -->
+                <div class="dropdown dropdown-top mt-auto">
+                    <div tabindex="0" class="flex mt-auto justify-between mb-4 items-center rounded-full hover:bg-base-200 px-3 py-2 cursor-pointer">
+                        <div class="flex gap-4 ">
+                    <img class="h-10 w-10 rounded-full my-auto" src="/asset/profile.jpeg" alt="">
+                        <div>
+                            <h1 class="font-semibold text-[15px]">Candra Herdiana</h1>
+                            <h2 class="opacity-50">@cand_99</h2>
+                        </div>
+                    </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <ul tabindex="0" class="m-3 p-2 drop-shadow-3xl shadow-white menu dropdown-content bg-black rounded-box w-64">
+                        
+                            <!-- Profile Dalam Dropdown -->
+                            <div class="flex mt-auto justify-between mb-1 items-center rounded-full  px-3 py-2 borderb">
+                                <div class="flex gap-4 ">
+                            <img class="h-10 w-10 rounded-full my-auto" src="/asset/profile.jpeg" alt="">
+                                <div>
+                                    <h1 class="font-semibold text-[15px]">Candra Herdiana</h1>
+                                    <h2 class="opacity-50">@cand_99</h2>
+                                </div>
+                            </div>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-primary "  viewBox="0 0 24 24" >
+                                    <path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                    
+                       <div class="border-b border-white border-opacity-20 my-2">
+                          
+                       </div>
+                    
+                            
+                            <li>
+                           
+                          <a>Add an existing account</a>
+                        </li> 
+                        <li>
+                          <a>Log out @cand_99</a>
+                        </li>
+                      </ul>
+                </div>
+                <!-- /Profile User -->
+            </div>
+            </div>
+            <!-- /left -->
+            <!-- middle -->
+            <div class="w-full sm:w-600 h-screen border-l border-opacity-60 border-gray-700 ">
+                <div class="flex justify-between items-center px-4 py-3 sticky top-0">
+                        <!-- Title -->
+            <h2 class="font-bold text-xl">
+                Home
+              </h2>
+              <div data-tip="Top Tweets" class="tooltip tooltip-bottom">
+                  <div class="cursor-pointer hover:bg-primary/20 rounded-full flex p-[6px]">
+                      <svg viewBox="0 0 24 24" class="w-5 h-5 text-base-content m-auto" fill="currentColor" >
+                  <g>
+                    <path
+                      d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+                </div>
+                <!-- status -->
+                <div class="flex w-full  px-4  space-x-4 border-b border-gray-700 border-opacity-60">
+                    <img class="w-12 h-12 rounded-full" src="/asset/profile.jpeg" alt="">
+                    <div class="flex flex-col w-10/12">
+                        <form action="">
+                            <div class="form-control p-[8px]">
+                                <input type="text" placeholder="What's Happening?" class="bg-transparent focus:ring-0 focus:outline-none text-xl placeholder:opacity-60">
+                                
+                            </div>
+                        </form>
+                        <!-- Menu Status -->
+                        <div class="w-full border-b border-gray-700 border-opacity-60 p-[8px]">
+                            <button class=" text-sm text-primary flex font-semibold  items-center  cursor-pointer hover:bg-primary/10 rounded-full py-1 px-2">
+                                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-4 h-4 mr-2"><g><path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12S6.2 22.5 12 22.5 22.5 17.8 22.5 12 17.8 1.5 12 1.5zM9.047 5.9c-.878.484-1.22.574-1.486.858-.263.284-.663 1.597-.84 1.712-.177.115-1.462.154-1.462.154s2.148 1.674 2.853 1.832c.706.158 2.43-.21 2.77-.142.342.07 2.116 1.67 2.324 2.074.208.404.166 1.748-.038 1.944-.204.196-1.183 1.09-1.393 1.39-.21.3-1.894 4.078-2.094 4.08-.2 0-.62-.564-.73-.848-.11-.284-.427-4.012-.59-4.263-.163-.25-1.126-.82-1.276-1.026-.15-.207-.552-1.387-.527-1.617.024-.23.492-1.007.374-1.214-.117-.207-2.207-1.033-2.61-1.18-.403-.145-.983-.332-.983-.332 1.13-3.652 4.515-6.318 8.52-6.38 0 0 .125-.018.186.14.11.286.256 1.078.092 1.345-.143.23-2.21.99-3.088 1.474zm11.144 8.24c-.21-.383-1.222-2.35-1.593-2.684-.23-.208-2.2-.912-2.55-1.09-.352-.177-1.258-.997-1.267-1.213-.01-.216 1.115-1.204 1.15-1.524.056-.49-1.882-1.835-1.897-2.054-.015-.22.147-.66.31-.81.403-.36 3.19.04 3.556.36 2 1.757 3.168 4.126 3.168 6.873 0 .776-.18 1.912-.282 2.18-.08.21-.443.232-.595-.04z"></path></g></svg>
+                                 Everyone can reply
+                              </button>
+                        </div>
+                          <div class="flex text-primary px-[8px] py-[12px] justify-between">
+                              <div>
+                                  <div data-tip="Media" class="tooltip tooltip-bottom">
+                                    <button class=" hover:bg-primary/25 rounded-full w-7 h-7 flex">
+                                        <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 m-auto"><g><path d="M19.75 2H4.25C3.01 2 2 3.01 2 4.25v15.5C2 20.99 3.01 22 4.25 22h15.5c1.24 0 2.25-1.01 2.25-2.25V4.25C22 3.01 20.99 2 19.75 2zM4.25 3.5h15.5c.413 0 .75.337.75.75v9.676l-3.858-3.858c-.14-.14-.33-.22-.53-.22h-.003c-.2 0-.393.08-.532.224l-4.317 4.384-1.813-1.806c-.14-.14-.33-.22-.53-.22-.193-.03-.395.08-.535.227L3.5 17.642V4.25c0-.413.337-.75.75-.75zm-.744 16.28l5.418-5.534 6.282 6.254H4.25c-.402 0-.727-.322-.744-.72zm16.244.72h-2.42l-5.007-4.987 3.792-3.85 4.385 4.384v3.703c0 .413-.337.75-.75.75z"></path><circle cx="8.868" cy="8.309" r="1.542"></circle></g></svg>
+                                    </button>
+                                  </div>
+                                  <div data-tip="GIF" class="tooltip tooltip-bottom">
+                                    <button class=" hover:bg-primary/25 rounded-full w-7 h-7 flex">
+                                        <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 m-auto"><g><path d="M19 10.5V8.8h-4.4v6.4h1.7v-2h2v-1.7h-2v-1H19zm-7.3-1.7h1.7v6.4h-1.7V8.8zm-3.6 1.6c.4 0 .9.2 1.2.5l1.2-1C9.9 9.2 9 8.8 8.1 8.8c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2c1 0 1.8-.4 2.4-1.1v-2.5H7.7v1.2h1.2v.6c-.2.1-.5.2-.8.2-.9 0-1.6-.7-1.6-1.6 0-.8.7-1.6 1.6-1.6z"></path><path d="M20.5 2.02h-17c-1.24 0-2.25 1.007-2.25 2.247v15.507c0 1.238 1.01 2.246 2.25 2.246h17c1.24 0 2.25-1.008 2.25-2.246V4.267c0-1.24-1.01-2.247-2.25-2.247zm.75 17.754c0 .41-.336.746-.75.746h-17c-.414 0-.75-.336-.75-.746V4.267c0-.412.336-.747.75-.747h17c.414 0 .75.335.75.747v15.507z"></path></g></svg>
+                                    </button>
+                                  </div>
+                                  <div data-tip="Poll" class="tooltip tooltip-bottom">
+                                    <button class=" hover:bg-primary/25 rounded-full w-7 h-7 flex">
+                                        <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 m-auto"><g><path d="M20.222 9.16h-1.334c.015-.09.028-.182.028-.277V6.57c0-.98-.797-1.777-1.778-1.777H3.5V3.358c0-.414-.336-.75-.75-.75s-.75.336-.75.75V20.83c0 .415.336.75.75.75s.75-.335.75-.75v-1.434h10.556c.98 0 1.778-.797 1.778-1.777v-2.313c0-.095-.014-.187-.028-.278h4.417c.98 0 1.778-.798 1.778-1.778v-2.31c0-.983-.797-1.78-1.778-1.78zM17.14 6.293c.152 0 .277.124.277.277v2.31c0 .154-.125.28-.278.28H3.5V6.29h13.64zm-2.807 9.014v2.312c0 .153-.125.277-.278.277H3.5v-2.868h10.556c.153 0 .277.126.277.28zM20.5 13.25c0 .153-.125.277-.278.277H3.5V10.66h16.722c.153 0 .278.124.278.277v2.313z"></path></g></svg>
+                                    </button>
+                                  </div>
+                                  <div data-tip="Emoji" class="tooltip tooltip-bottom">
+                                    <button class=" hover:bg-primary/25 rounded-full w-7 h-7 flex">
+                                        <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 m-auto"><g><path d="M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z"></path><path d="M12 17.115c-1.892 0-3.633-.95-4.656-2.544-.224-.348-.123-.81.226-1.035.348-.226.812-.124 1.036.226.747 1.162 2.016 1.855 3.395 1.855s2.648-.693 3.396-1.854c.224-.35.688-.45 1.036-.225.35.224.45.688.226 1.036-1.025 1.594-2.766 2.545-4.658 2.545z"></path><circle cx="14.738" cy="9.458" r="1.478"></circle><circle cx="9.262" cy="9.458" r="1.478"></circle></g></svg>
+                                    </button>
+                                  </div>
+                                  <div data-tip="Schedule" class="tooltip tooltip-bottom">
+                                    <button class=" hover:bg-primary/25 rounded-full w-7 h-7 flex">
+                                        <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 m-auto"><g><path d="M-37.9 18c-.1-.1-.1-.1-.1-.2.1 0 .1.1.1.2z"></path><path d="M-37.9 18c-.1-.1-.1-.1-.1-.2.1 0 .1.1.1.2zM18 2.2h-1.3v-.3c0-.4-.3-.8-.8-.8-.4 0-.8.3-.8.8v.3H7.7v-.3c0-.4-.3-.8-.8-.8-.4 0-.8.3-.8.8v.3H4.8c-1.4 0-2.5 1.1-2.5 2.5v13.1c0 1.4 1.1 2.5 2.5 2.5h2.9c.4 0 .8-.3.8-.8 0-.4-.3-.8-.8-.8H4.8c-.6 0-1-.5-1-1V7.9c0-.3.4-.7 1-.7H18c.6 0 1 .4 1 .7v1.8c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-5c-.1-1.4-1.2-2.5-2.6-2.5zm1 3.7c-.3-.1-.7-.2-1-.2H4.8c-.4 0-.7.1-1 .2V4.7c0-.6.5-1 1-1h1.3v.5c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-.5h7.5v.5c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-.5H18c.6 0 1 .5 1 1v1.2z"></path><path d="M15.5 10.4c-3.4 0-6.2 2.8-6.2 6.2 0 3.4 2.8 6.2 6.2 6.2 3.4 0 6.2-2.8 6.2-6.2 0-3.4-2.8-6.2-6.2-6.2zm0 11c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7c0 2.5-2.1 4.7-4.7 4.7z" ></path><path d="M18.9 18.7c-.1.2-.4.4-.6.4-.1 0-.3 0-.4-.1l-3.1-2v-3c0-.4.3-.8.8-.8.4 0 .8.3.8.8v2.2l2.4 1.5c.2.2.3.6.1 1z"></path></g></svg>
+                                    </button>
+                                  </div>
+                                  <div data-tip="Tag Location" class="tooltip tooltip-bottom">
+                                    <button class=" hover:bg-primary/25 rounded-full w-7 h-7 flex">
+                                        <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 m-auto"><g><path d="M12 14.315c-2.088 0-3.787-1.698-3.787-3.786S9.913 6.74 12 6.74s3.787 1.7 3.787 3.787-1.7 3.785-3.787 3.785zm0-6.073c-1.26 0-2.287 1.026-2.287 2.287S10.74 12.814 12 12.814s2.287-1.025 2.287-2.286S13.26 8.24 12 8.24z"></path><path d="M20.692 10.69C20.692 5.9 16.792 2 12 2s-8.692 3.9-8.692 8.69c0 1.902.603 3.708 1.743 5.223l.003-.002.007.015c1.628 2.07 6.278 5.757 6.475 5.912.138.11.302.163.465.163.163 0 .327-.053.465-.162.197-.155 4.847-3.84 6.475-5.912l.007-.014.002.002c1.14-1.516 1.742-3.32 1.742-5.223zM12 20.29c-1.224-.99-4.52-3.715-5.756-5.285-.94-1.25-1.436-2.742-1.436-4.312C4.808 6.727 8.035 3.5 12 3.5s7.192 3.226 7.192 7.19c0 1.57-.497 3.062-1.436 4.313-1.236 1.57-4.532 4.294-5.756 5.285z"></path></g></svg>
+                                    </button>
+                                  </div>
+                              </div>
+                              <button class=" text-base-content rounded-full btn-primary btn capitalize text-[15px] btn-sm">Tweet</button>
+                          </div>
+                    </div>
+                 
+                </div>
+             <!-- /status -->
+             <!-- Content Tweet -->
+             <div class="flex mx-4 my-4 gap-3">
+              
+                <img class="w-12 h-12 rounded-full" src="/asset/profile.jpeg" alt="">
+              
+               <div class="flex-row space-y-3">
+                   <!-- profile -->
+                   <div class="flex gap-2 justify-between">
+                       <div class="flex gap-3">
+                           <h2>Candra Herdiana</h2>
+                           <p>cand_99 <span>.Nov 7</span></p>
+                        </div>
+                       <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary  " viewBox="0 0 20 20" fill="currentColor">
+                            <path  d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                          </svg>
+                    </div>
+                    </div>
+                    <!-- /profile -->
+                    <!-- tweet -->
+                    <div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae culpa iure mollitia consequuntur provident blanditiis enim porro nihil corporis! Eos.</p>
+                    </div>
+                    <!-- /tweet -->
+                   <!-- image -->
+                   <div class="">
+                       <img class="border border-gray-700 border-opacity-60 rounded-box" src="https://pbs.twimg.com/media/FLkpv47X0AY-4u4?format=jpg&name=medium" alt="">
+                   </div>
+                   <!-- /image -->
+                   <!-- like dll -->
+                   <div class="flex justify-around">
+                    <div class="flex gap-1 items-center">
+                        <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4"><g><path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>
+                       <span>9</span>
+                       
+                    </div>
+                    
+                   </div>
+                   <!-- /like dll -->
+               </div>
+             </div>
+             <!-- /Content Tweet -->
+            </div>
+            <!-- /midle -->
+            <!-- right -->
+            <div class="hidden md:block w-290 lg:w-350 h-screen border-l border-r border-gray-700 border-opacity-60">
+                <div class="flex flex-col fixed overflow-y-auto w-290 lg:w-350 h-screen mt-2 px-6">
+                    <div class="w-full sticky top-0">
+                        <div class="relative mt-1">
+                            <div class="absolute flex items-center h-full pl-4 opacity-60">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-transparent"  viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                  </svg>
+                            </div>          
+                                <input type="text" placeholder="Search Twitter" class="w-full rounded-full py-2 px-3 bg-abu flex items-center pl-14 text-base h-12 placeholder:opacity-60 focus:outline-none ">
+                        </div>
+                    </div>
+                    <!-- Trending -->
+                    <div class=" bg-abu-100 mt-4 rounded-box ">
+                        <div class="flex justify-between py-2 px-3">
+                            <h2 class="text-xl font-extrabold leading-6 ">Trends for you</h2>
+                            <div data-tip="Settings" class="tooltip tooltip-bottom">
+                                <button class="h-8 w-8 hover:bg-white/10 rounded-full flex ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                      </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- trending item -->
+                        <div class="flex justify-between hover:bg-abu w-full py-3 px-3 cursor-pointer">
+                            <div>
+                                <p class="text-[13px] opacity-50">Trending Indonesia</p>
+                                <h2 class="text-[15px] font-semibold">Indonesia</h2>
+                                <p class="text-[13px] opacity-50">4,498 Tweets</p>
+                            </div>
+                            <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary  " viewBox="0 0 20 20" fill="currentColor">
+                                    <path  d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                                  </svg>
+                            </div>
+                        </div>
+                        <!-- trending item -->
+                        <div class="flex justify-between hover:bg-abu w-full py-3 px-3 cursor-pointer">
+                            <div>
+                                <p class="text-[13px] opacity-50">Trending Indonesia</p>
+                                <h2 class="text-[15px] font-semibold">Indonesia</h2>
+                                <p class="text-[13px] opacity-50">4,498 Tweets</p>
+                            </div>
+                            <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary  " viewBox="0 0 20 20" fill="currentColor">
+                                    <path  d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                                  </svg>
+                            </div>
+                        </div>
+                        <!-- trending item -->
+                        <div class="flex justify-between hover:bg-abu w-full py-3 px-3 cursor-pointer">
+                            <div>
+                                <p class="text-[13px] opacity-50">Trending Indonesia</p>
+                                <h2 class="text-[15px] font-semibold">Indonesia</h2>
+                                <p class="text-[13px] opacity-50">4,498 Tweets</p>
+                            </div>
+                            <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary  " viewBox="0 0 20 20" fill="currentColor">
+                                    <path  d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                                  </svg>
+                            </div>
+                        </div>
+                        <!-- trending item -->
+                        <div class="flex justify-between hover:bg-abu w-full py-3 px-3 cursor-pointer">
+                            <div>
+                                <p class="text-[13px] opacity-50">Trending Indonesia</p>
+                                <h2 class="text-[15px] font-semibold">Indonesia</h2>
+                                <p class="text-[13px] opacity-50">4,498 Tweets</p>
+                            </div>
+                            <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary  " viewBox="0 0 20 20" fill="currentColor">
+                                    <path  d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                                  </svg>
+                            </div>
+                        </div>
+                        <!-- trending item -->
+                        <div class="flex justify-between hover:bg-abu w-full py-3 px-3 cursor-pointer">
+                            <div>
+                                <p class="text-[13px] opacity-50">Trending Indonesia</p>
+                                <h2 class="text-[15px] font-semibold">Indonesia</h2>
+                                <p class="text-[13px] opacity-50">4,498 Tweets</p>
+                            </div>
+                            <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary  " viewBox="0 0 20 20" fill="currentColor">
+                                    <path  d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                                  </svg>
+                            </div>
+                        </div>
+                        <!-- Button -->
+                        <button class="text-primary text-[15px] py-3 px-3 hover:bg-abu hover:rounded-b-box w-full font-normal text-left">
+                            Show more
+                        </button>
+                    </div>
+                    <!-- /Trending -->
+                    <div class="bg-abu-100 mt-4 rounded-box">
+                        <div class="flex justify-between py-2 px-3">
+                            <h2 class="text-xl font-extrabold leading-6 ">Who to follow</h2>
+                        </div>
+                        <div class="flex flex-col">
+                           <!-- Profile Follow -->
+                           <div class="flex justify-between mb-1 items-center hover:bg-abu  px-3 py-2 borderb w-full ">
+                            <div class="flex gap-4 ">
+                        <img class="h-10 w-10 rounded-full my-auto" src="/asset/profile.jpeg" alt="">
+                            <div>
+                                <h1 class="font-semibold text-[15px]">Candra Herdiana</h1>
+                                <h2 class="opacity-50">@cand_99</h2>
+                            </div>
+                        </div>
+                            <div>
+                               <button class="px-3 py-2 bg-base-300 rounded-full text-gray-700 font-bold text-sm">
+                                   Follow
+                               </button>
+                            </div>
+                        </div>
+                           <div class="flex justify-between mb-1 items-center hover:bg-abu  px-3 py-2 borderb w-full ">
+                            <div class="flex gap-4 ">
+                        <img class="h-10 w-10 rounded-full my-auto" src="/asset/profile.jpeg" alt="">
+                            <div>
+                                <h1 class="font-semibold text-[15px]">Candra Herdiana</h1>
+                                <h2 class="opacity-50">@cand_99</h2>
+                            </div>
+                        </div>
+                            <div>
+                               <button class="px-3 py-2 bg-base-300 rounded-full text-gray-700 font-bold text-sm">
+                                   Follow
+                               </button>
+                            </div>
+                        </div>
+                           <div class="flex justify-between mb-1 items-center hover:bg-abu  px-3 py-2 borderb w-full ">
+                            <div class="flex gap-4 ">
+                        <img class="h-10 w-10 rounded-full my-auto" src="/asset/profile.jpeg" alt="">
+                            <div>
+                                <h1 class="font-semibold text-[15px] flex items-center gap-1">Candra Herdiana <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                  </svg></span> </h1>
+                                <h2 class="opacity-50">@cand_99</h2>
+                            </div>
+                        </div>
+                            <div>
+                               <button class="px-3 py-2 bg-base-300 rounded-full text-gray-700 font-bold text-sm">
+                                   Follow
+                               </button>
+                            </div>
+                        </div>
+                        <button class="text-primary text-[15px] py-3 px-3 hover:bg-abu hover:rounded-b-box w-full font-normal text-left">
+                            Show more
+                        </button>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /right -->
+        </div>
+    </div>
+  
+    <script>
+       var id = document.getElementsByClassName("--value")[0-99].value;
+
+    </script>
 </body>
 </html>
