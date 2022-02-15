@@ -5,3 +5,7 @@
 .tooltip::before{
     font-size: 0.6875rem;
 }
+
+.btn-follow{
+    @apply px-3 py-1 outline outline-1 rounded-full w-24 
+}

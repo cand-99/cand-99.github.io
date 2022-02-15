@@ -1,5 +1,5 @@
 <!DOCTYPE html >
-<html lang="en" data-theme="mytheme" >
+<html lang="en" data-theme="mytheme" class="bg-black" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +7,31 @@
     <title>Document</title>
     <link href="/dist/output.css" rel="stylesheet">
 </head>
-<body class="bg-black">
+<body>
    
-    <div class="container mx-auto h-screen">
+    <div class="container mx-auto min-h-screen">
         <div class="flex justify-center">
             <!-- left -->
-            <div class="w-68 xs:w-88 xl:w-275 h-screen">
+            <div class="w-68 xs:w-88 xl:w-275 min-h-screen">
             <div class="flex flex-col h-screen xl:pr-3 fixed overflow-y-auto w-68 xs:w-88 xl:w-275">
                 <!-- Sidebar -->
                 <nav class="space-y-3 ml-3">
-                    <div>
+                    <div class="flex justify-between items-center">
                         <!-- logo -->
                     <button href="#" class="hover:bg-primary/10 hover:rounded-full p-2 " >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9" viewBox="0 0 24 24" fill="currentColor">
                             <path   d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z ">
                             </svg>
                     </button>
+                     <!-- darkmode -->
+                     <label class="swap swap-rotate">          
+                        <input type="checkbox" id="showCheckoutHistory" name="showCheckoutHistory"/>
+                        <!-- sun icon -->
+                        <svg class="swap-on fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+                        <!-- moon icon -->
+                        <svg class="swap-off fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>  
+                      </label>
+                    <!-- /darkmode -->
                         </div> 
                 <!-- icon -->
                     <div class="">
@@ -155,30 +164,32 @@
                       </ul>
                 </div>
                 <!-- /Profile User -->
+            
             </div>
+            
             </div>
             <!-- /left -->
             <!-- middle -->
-            <div class="w-full sm:w-600 h-screen border-l border-opacity-60 border-gray-700 ">
-                <div class="flex justify-between items-center px-4 py-3 sticky top-0">
+            <div class="w-full sm:w-600 h-screen border-opacity-60 border-gray-700 ">
+                <div class="flex justify-between items-center px-4 py-3 sticky top-0 bg-black/30 backdrop-blur border-r border-l border-opacity-60 border-gray-700">
                         <!-- Title -->
             <h2 class="font-bold text-xl">
                 Home
               </h2>
-              <div data-tip="Top Tweets" class="tooltip tooltip-bottom">
-                  <div class="cursor-pointer hover:bg-primary/20 rounded-full flex p-[6px]">
-                      <svg viewBox="0 0 24 24" class="w-5 h-5 text-base-content m-auto" fill="currentColor" >
-                  <g>
-                    <path
-                      d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z"
-                    ></path>
-                  </g>
-                </svg>
-              </div>
-            </div>
+                  <div data-tip="Top Tweets" class="tooltip tooltip-bottom">
+                      <div class="cursor-pointer hover:bg-primary/20 rounded-full flex p-[6px]">
+                          <svg viewBox="0 0 24 24" class="w-5 h-5 text-base-content m-auto" fill="currentColor" >
+                      <g>
+                        <path
+                          d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
                 </div>
-                <!-- status -->
-                <div class="flex w-full  px-4  space-x-4 border-b border-gray-700 border-opacity-60">
+                </div>
+                <!--input status -->
+                <div class="flex w-full  px-4  space-x-4 border-b border-gray-700 border-opacity-60 border-r border-l">
                     <img class="w-12 h-12 rounded-full" src="/asset/profile.jpeg" alt="">
                     <div class="flex flex-col w-10/12">
                         <form action="">
@@ -187,7 +198,7 @@
                                 
                             </div>
                         </form>
-                        <!-- Menu Status -->
+                        <!-- Menu input Status -->
                         <div class="w-full border-b border-gray-700 border-opacity-60 p-[8px]">
                             <button class=" text-sm text-primary flex font-semibold  items-center  cursor-pointer hover:bg-primary/10 rounded-full py-1 px-2">
                                 <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-4 h-4 mr-2"><g><path d="M12 1.5C6.2 1.5 1.5 6.2 1.5 12S6.2 22.5 12 22.5 22.5 17.8 22.5 12 17.8 1.5 12 1.5zM9.047 5.9c-.878.484-1.22.574-1.486.858-.263.284-.663 1.597-.84 1.712-.177.115-1.462.154-1.462.154s2.148 1.674 2.853 1.832c.706.158 2.43-.21 2.77-.142.342.07 2.116 1.67 2.324 2.074.208.404.166 1.748-.038 1.944-.204.196-1.183 1.09-1.393 1.39-.21.3-1.894 4.078-2.094 4.08-.2 0-.62-.564-.73-.848-.11-.284-.427-4.012-.59-4.263-.163-.25-1.126-.82-1.276-1.026-.15-.207-.552-1.387-.527-1.617.024-.23.492-1.007.374-1.214-.117-.207-2.207-1.033-2.61-1.18-.403-.145-.983-.332-.983-.332 1.13-3.652 4.515-6.318 8.52-6.38 0 0 .125-.018.186.14.11.286.256 1.078.092 1.345-.143.23-2.21.99-3.088 1.474zm11.144 8.24c-.21-.383-1.222-2.35-1.593-2.684-.23-.208-2.2-.912-2.55-1.09-.352-.177-1.258-.997-1.267-1.213-.01-.216 1.115-1.204 1.15-1.524.056-.49-1.882-1.835-1.897-2.054-.015-.22.147-.66.31-.81.403-.36 3.19.04 3.556.36 2 1.757 3.168 4.126 3.168 6.873 0 .776-.18 1.912-.282 2.18-.08.21-.443.232-.595-.04z"></path></g></svg>
@@ -232,54 +243,172 @@
                     </div>
                  
                 </div>
-             <!-- /status -->
-             <!-- Content Tweet -->
-             <div class="flex mx-4 my-4 gap-3">
-              
-                <img class="w-12 h-12 rounded-full" src="/asset/profile.jpeg" alt="">
-              
-               <div class="flex-row space-y-3">
+             <!-- /input status -->
+             <!-- Content Tweet --> 
+             <div class="flex py-4  border-b border-r border-l border-gray-700 border-opacity-60 pb-4 hover:bg-base-200/10 cursor-pointer"> 
+                <img class="w-12 h-12 rounded-full mx-4" src="https://pbs.twimg.com/profile_images/1489375145684873217/3VYnFrzx_400x400.jpg" alt="">
+               <div class="flex-row  mx-3 ">
                    <!-- profile -->
-                   <div class="flex gap-2 justify-between">
+                   <div class="flex justify-between items-center">
                        <div class="flex gap-3">
-                           <h2>Candra Herdiana</h2>
-                           <p>cand_99 <span>.Nov 7</span></p>
+                        <div class="dropdown dropdown-hover ">
+                           <a href="#" tabindex="1" class="text-[15px]  font-bold hover:underline flex items-center ">Elon Musk <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                          </svg></span></a>
+                           <!-- modal -->
+                           <ul tabindex="1" class=" p-4 drop-shadow-3xl cursor-auto shadow-white menu dropdown-content bg-black rounded-box w-80 ">
+                           <div class="flex justify-between ">
+                            <div class="flex-row justify-start">
+                                <img class="w-14 h-14 rounded-full " src="https://pbs.twimg.com/profile_images/1489375145684873217/3VYnFrzx_400x400.jpg" alt="">
+                                <a href="#" tabindex="1" class="text-[15px]   font-bold hover:underline ">Elon Musk</a>
+                                <p class="text-abu-200 font-normal text-[15px] ">@elonmusk </p>
+                            </div>
+                            <div class="btn-sm group">
+                          <button class="btn-follow font-semibold text-red-500  capitalize hidden group-hover:block">Unfollow</button>
+                          <button class="btn-follow font-semibold text-base-content group-hover:hidden block capitalize">following</button>
+                            </div>
+                           </div>
+                               <h2 class="text-[15px] mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, blanditiis!</h2>
+                           <div class="flex gap-4 mt-4">
+                                <h2 class="hover:underline cursor-pointer  text-abu-200"><span class="text-base-content">164</span> Following</h2>
+                                <h2 class="hover:underline cursor-pointer text-abu-200"><span class="text-base-content">1654</span> Following</h2>
+                           </div>
+                           <p class="text-sm text-abu-200 mt-2">Not Followed by any one you're following</p>
+                         
+                          </ul>
+                          <!-- /modal -->
                         </div>
-                       <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary  " viewBox="0 0 20 20" fill="currentColor">
+                           <p class="text-abu-200 font-normal">@elonmusk <span>.4h</span></p>
+                        </div>
+                       <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto fill-abu-200 text-abu-200 group-hover:fill-primary transition-all  " viewBox="0 0 20 20" fill="currentColor">
                             <path  d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
                           </svg>
                     </div>
                     </div>
                     <!-- /profile -->
                     <!-- tweet -->
-                    <div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae culpa iure mollitia consequuntur provident blanditiis enim porro nihil corporis! Eos.</p>
-                    </div>
+                 
+                        <p class="mb-4 text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae culpa iure mollitia consequuntur provident blanditiis enim porro nihil corporis! Eos.</p>
+                   
                     <!-- /tweet -->
                    <!-- image -->
-                   <div class="">
+                   <div class="mb-3">
                        <img class="border border-gray-700 border-opacity-60 rounded-box" src="https://pbs.twimg.com/media/FLkpv47X0AY-4u4?format=jpg&name=medium" alt="">
                    </div>
                    <!-- /image -->
-                   <!-- like dll -->
-                   <div class="flex justify-around">
-                    <div class="flex gap-1 items-center">
-                        <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4"><g><path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>
-                       <span>9</span>
-                       
+                   <!-- like retweet dll -->
+                   <div class="flex justify-between w-10/12 ">
+                       <div class="flex items-center group cursor-pointer gap-1 text-gray-400 ">
+                               <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-primary h-8 w-8 group-hover:bg-primary/20 p-2 rounded-full "><g><path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>
+                            <span class="group-hover:text-primary text-[13px] font-normal">25</span>
+                        </div>  
+                       <div class="flex items-center group cursor-pointer gap-1 text-gray-400">
+                               <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-hijau h-8 w-8 group-hover:bg-hijau/20 p-2 rounded-full"><g><path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></g></svg>
+                            <span class="group-hover:text-hijau text-[13px] font-normal">25</span>
+                        </div>  
+                       <div class="flex items-center group cursor-pointer gap-1 text-gray-400">
+                               <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-pink2 h-8 w-8 group-hover:bg-pink2/20 p-2 rounded-full"><g><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>
+                            <span class="group-hover:text-pink2 text-[13px] font-normal">25</span>
+                        </div>  
+                       <div class="flex items-center group cursor-pointer gap-1 text-gray-400">
+                               <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-primary h-8 w-8 group-hover:bg-primary/20 p-2 rounded-full "><g><path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path></g></svg>
+                          
+                        </div>  
                     </div>
-                    
-                   </div>
                    <!-- /like dll -->
                </div>
              </div>
+             <!-- Content Tweet --> 
+             <div class="flex py-4  border-b border-r border-l border-gray-700 border-opacity-60 pb-4 hover:bg-base-200/10 cursor-pointer"> 
+                <img class="w-12 h-12 rounded-full mx-4" src="/asset/profile.jpeg" alt="">
+               <div class="flex-row  mx-3 ">
+                   <!-- profile -->
+                   <div class="flex justify-between items-center">
+                       <div class="flex gap-3">
+                        <div class="dropdown dropdown-hover ">
+                           <a href="#" tabindex="1" class="text-[15px]  font-bold hover:underline flex items-center ">Candra Herdiana <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                          </svg></span></a>
+                           <!-- modal -->
+                           <ul tabindex="1" class=" p-4 drop-shadow-3xl cursor-auto shadow-white menu dropdown-content bg-black rounded-box w-80 ">
+                           <div class="flex justify-between ">
+                            <div class="flex-row justify-start">
+                                <img class="w-14 h-14 rounded-full " src="/asset/profile.jpeg" alt="">
+                                <a href="#" tabindex="1" class="text-[15px]   font-bold hover:underline ">Candra Herdiana</a>
+                                <p class="text-abu-200 font-normal text-[15px] ">@cand_99 </p>
+                            </div>
+                            <div class="btn-sm group">
+                          <button class="btn-follow font-semibold text-red-500  capitalize hidden group-hover:block">Unfollow</button>
+                          <button class="btn-follow font-semibold text-base-content group-hover:hidden block capitalize">following</button>
+                            </div>
+                           </div>
+                               <h2 class="text-[15px] mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, blanditiis!</h2>
+                           <div class="flex gap-4 mt-4">
+                                <h2 class="hover:underline cursor-pointer  text-abu-200"><span class="text-base-content">164</span> Following</h2>
+                                <h2 class="hover:underline cursor-pointer text-abu-200"><span class="text-base-content">1654</span> Following</h2>
+                           </div>
+                           <p class="text-sm text-abu-200 mt-2">Not Followed by any one you're following</p>
+                         
+                          </ul>
+                          <!-- /modal -->
+                        </div>
+                           <p class="text-abu-200 font-normal">@cand_99 <span>.Nov 7</span></p>
+                        </div>
+                       <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto fill-abu-200 text-abu-200 group-hover:fill-primary transition-all  " viewBox="0 0 20 20" fill="currentColor">
+                            <path  d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
+                          </svg>
+                    </div>
+                    </div>
+                    <!-- /profile -->
+                    <!-- tweet -->
+                 
+                        <p class="mb-4 text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae culpa iure mollitia consequuntur provident blanditiis enim porro nihil corporis! Eos.</p>
+                   
+                    <!-- /tweet -->
+                   <!-- image -->
+                   <div class="mb-3">
+                       <img class="border border-gray-700 border-opacity-60 rounded-box" src="https://pbs.twimg.com/media/FLNbf90UYAMdbBJ?format=jpg&name=large" alt="">
+                   </div>
+                   <!-- /image -->
+                   <!-- like retweet dll -->
+                   <div class="flex justify-between w-10/12 ">
+                       <div class="flex items-center group cursor-pointer gap-1 text-gray-400 ">
+                               <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-primary h-8 w-8 group-hover:bg-primary/20 p-2 rounded-full "><g><path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>
+                            <span class="group-hover:text-primary text-[13px] font-normal">25</span>
+                        </div>  
+                       <div class="flex items-center group cursor-pointer gap-1 text-gray-400">
+                               <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-hijau h-8 w-8 group-hover:bg-hijau/20 p-2 rounded-full"><g><path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></g></svg>
+                            <span class="group-hover:text-hijau text-[13px] font-normal">25</span>
+                        </div>  
+                       <div class="flex items-center group cursor-pointer gap-1 text-gray-400">
+                               <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-pink2 h-8 w-8 group-hover:bg-pink2/20 p-2 rounded-full"><g><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>
+                            <span class="group-hover:text-pink2 text-[13px] font-normal">25</span>
+                        </div>  
+                       <div class="flex items-center group cursor-pointer gap-1 text-gray-400">
+                               <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-primary h-8 w-8 group-hover:bg-primary/20 p-2 rounded-full "><g><path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path></g></svg>
+                          
+                        </div>  
+                    </div>
+                   <!-- /like dll -->
+               </div>
+             </div>
+            <!-- Content Tweet loading -->
+             <div class="flex py-4  border-b border-r border-l border-gray-700 border-opacity-60 pb-4 hover:bg-base-200/10 cursor-auto">
+                <div class="mx-auto">
+                    <div style="border-top-color:transparent "
+                        class="w-8 h-8 border-2 border-white rounded-full animate-spin  mx-auto"></div>
+                </div>
+             </div>
+            
              <!-- /Content Tweet -->
             </div>
             <!-- /midle -->
             <!-- right -->
-            <div class="hidden md:block w-290 lg:w-350 h-screen border-l border-r border-gray-700 border-opacity-60">
-                <div class="flex flex-col fixed overflow-y-auto w-290 lg:w-350 h-screen mt-2 px-6">
+            <div class="hidden md:block w-290 lg:w-350 h-screen  border-gray-700 border-opacity-60">
+                
+                <div class="flex flex-col fixed overflow-y-auto w-290 lg:w-350 h-screen mt-2 pl-4 ">
                     <div class="w-full sticky top-0">
                         <div class="relative mt-1">
                             <div class="absolute flex items-center h-full pl-4 opacity-60">
@@ -292,8 +421,8 @@
                     </div>
                     <!-- Trending -->
                     <div class=" bg-abu-100 mt-4 rounded-box ">
-                        <div class="flex justify-between py-2 px-3">
-                            <h2 class="text-xl font-extrabold leading-6 ">Trends for you</h2>
+                        <div class="flex justify-between py-3 px-4">
+                            <h2 class="text-xl font-bold leading-6 ">Trends for you</h2>
                             <div data-tip="Settings" class="tooltip tooltip-bottom">
                                 <button class="h-8 w-8 hover:bg-white/10 rounded-full flex ">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -304,66 +433,53 @@
                             </div>
                         </div>
                         <!-- trending item -->
-                        <div class="flex justify-between hover:bg-abu w-full py-3 px-3 cursor-pointer">
+                        <div class="flex justify-between hover:bg-abu w-full py-3 px-4 cursor-pointer">
                             <div>
                                 <p class="text-[13px] opacity-50">Trending Indonesia</p>
                                 <h2 class="text-[15px] font-semibold">Indonesia</h2>
                                 <p class="text-[13px] opacity-50">4,498 Tweets</p>
                             </div>
                             <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary  " viewBox="0 0 20 20" fill="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary text-abu-200  " viewBox="0 0 20 20" fill="currentColor">
                                     <path  d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
                                   </svg>
                             </div>
                         </div>
                         <!-- trending item -->
-                        <div class="flex justify-between hover:bg-abu w-full py-3 px-3 cursor-pointer">
+                        <div class="flex justify-between hover:bg-abu w-full py-3 px-4 cursor-pointer">
                             <div>
                                 <p class="text-[13px] opacity-50">Trending Indonesia</p>
                                 <h2 class="text-[15px] font-semibold">Indonesia</h2>
                                 <p class="text-[13px] opacity-50">4,498 Tweets</p>
                             </div>
                             <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary  " viewBox="0 0 20 20" fill="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary text-abu-200  " viewBox="0 0 20 20" fill="currentColor">
                                     <path  d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
                                   </svg>
                             </div>
                         </div>
                         <!-- trending item -->
-                        <div class="flex justify-between hover:bg-abu w-full py-3 px-3 cursor-pointer">
+                        <div class="flex justify-between hover:bg-abu w-full py-3 px-4 cursor-pointer">
                             <div>
                                 <p class="text-[13px] opacity-50">Trending Indonesia</p>
                                 <h2 class="text-[15px] font-semibold">Indonesia</h2>
                                 <p class="text-[13px] opacity-50">4,498 Tweets</p>
                             </div>
                             <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary  " viewBox="0 0 20 20" fill="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary text-abu-200  " viewBox="0 0 20 20" fill="currentColor">
                                     <path  d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
                                   </svg>
                             </div>
                         </div>
                         <!-- trending item -->
-                        <div class="flex justify-between hover:bg-abu w-full py-3 px-3 cursor-pointer">
+                        <div class="flex justify-between hover:bg-abu w-full py-3 px-4 cursor-pointer">
                             <div>
                                 <p class="text-[13px] opacity-50">Trending Indonesia</p>
                                 <h2 class="text-[15px] font-semibold">Indonesia</h2>
                                 <p class="text-[13px] opacity-50">4,498 Tweets</p>
                             </div>
                             <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary  " viewBox="0 0 20 20" fill="currentColor">
-                                    <path  d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
-                                  </svg>
-                            </div>
-                        </div>
-                        <!-- trending item -->
-                        <div class="flex justify-between hover:bg-abu w-full py-3 px-3 cursor-pointer">
-                            <div>
-                                <p class="text-[13px] opacity-50">Trending Indonesia</p>
-                                <h2 class="text-[15px] font-semibold">Indonesia</h2>
-                                <p class="text-[13px] opacity-50">4,498 Tweets</p>
-                            </div>
-                            <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary  " viewBox="0 0 20 20" fill="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto group-hover:fill-primary text-abu-200  " viewBox="0 0 20 20" fill="currentColor">
                                     <path  d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
                                   </svg>
                             </div>
@@ -376,7 +492,7 @@
                     <!-- /Trending -->
                     <div class="bg-abu-100 mt-4 rounded-box">
                         <div class="flex justify-between py-2 px-3">
-                            <h2 class="text-xl font-extrabold leading-6 ">Who to follow</h2>
+                            <h2 class="text-xl font-bold leading-6 ">Who to follow</h2>
                         </div>
                         <div class="flex flex-col">
                            <!-- Profile Follow -->
@@ -384,12 +500,12 @@
                             <div class="flex gap-4 ">
                         <img class="h-10 w-10 rounded-full my-auto" src="/asset/profile.jpeg" alt="">
                             <div>
-                                <h1 class="font-semibold text-[15px]">Candra Herdiana</h1>
+                                <a href="#" class="font-semibold text-[15px] hover:underline">Candra Herdiana</a>
                                 <h2 class="opacity-50">@cand_99</h2>
                             </div>
                         </div>
                             <div>
-                               <button class="px-3 py-2 bg-base-300 rounded-full text-gray-700 font-bold text-sm">
+                               <button class="btn btn-secondary btn-sm rounded-full font-bold capitalize">
                                    Follow
                                </button>
                             </div>
@@ -398,37 +514,50 @@
                             <div class="flex gap-4 ">
                         <img class="h-10 w-10 rounded-full my-auto" src="/asset/profile.jpeg" alt="">
                             <div>
-                                <h1 class="font-semibold text-[15px]">Candra Herdiana</h1>
+                                <a href="#" class="font-semibold text-[15px] hover:underline">Candra Herdiana</a>
                                 <h2 class="opacity-50">@cand_99</h2>
                             </div>
                         </div>
                             <div>
-                               <button class="px-3 py-2 bg-base-300 rounded-full text-gray-700 font-bold text-sm">
+                               <button class="btn btn-secondary btn-sm rounded-full font-bold capitalize">
                                    Follow
                                </button>
                             </div>
                         </div>
                            <div class="flex justify-between mb-1 items-center hover:bg-abu  px-3 py-2 borderb w-full ">
                             <div class="flex gap-4 ">
-                        <img class="h-10 w-10 rounded-full my-auto" src="/asset/profile.jpeg" alt="">
+                        <img class="h-10 w-10 rounded-full my-auto" src="https://pbs.twimg.com/profile_images/1260876848776589313/EuWXY21V_400x400.jpg" alt="">
                             <div>
-                                <h1 class="font-semibold text-[15px] flex items-center gap-1">Candra Herdiana <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <a href="#" class="font-semibold text-[15px] hover:underline flex items-center">Jorfe Lorenzo<span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                  </svg></span> </h1>
-                                <h2 class="opacity-50">@cand_99</h2>
+                                  </svg></span></a>
+                                <h2 class="opacity-50">@lorenzo99</h2>
                             </div>
                         </div>
                             <div>
-                               <button class="px-3 py-2 bg-base-300 rounded-full text-gray-700 font-bold text-sm">
+                               <button class="btn btn-secondary btn-sm rounded-full font-bold capitalize">
                                    Follow
                                </button>
                             </div>
                         </div>
+                     
+                      
                         <button class="text-primary text-[15px] py-3 px-3 hover:bg-abu hover:rounded-b-box w-full font-normal text-left">
                             Show more
                         </button>
                         
                         </div>
+                    </div>
+                    <div class="px-4 mt-3 flex-col text-left">
+                        <a class="text-abu-200 text-sm hover:underline mr-2" href="#">Terms of Service</a>
+                        <a class="text-abu-200 text-sm hover:underline mr-2" href="#">Privacy Policy</a>
+                        <a class="text-abu-200 text-sm hover:underline mr-2" href="#">Cookie Polycy</a>
+                        <a class="text-abu-200 text-sm hover:underline mr-2 " href="#">Accessibility</a>
+                        <a class="text-abu-200 text-sm hover:underline mr-2" href="#">Ads info</a>
+                        <a class="text-abu-200 text-sm hover:underline mr-2" href="#">More ...</a>
+                        <br>
+                        <p class="text-abu-200 text-sm ">© 2022 Twitter, Inc.</p>
                     </div>
                 </div>
 
@@ -436,10 +565,16 @@
             <!-- /right -->
         </div>
     </div>
-  
+    <script src="jquery.min.js"></script>
     <script>
-       var id = document.getElementsByClassName("--value")[0-99].value;
-
+        jQuery(document).ready(function() {
+    jQuery('#showCheckoutHistory').change(function() {
+      
+            alert("Belum jadi"); //checked
+       
+      
+    });
+});
     </script>
 </body>
 </html>
