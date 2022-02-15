@@ -12,11 +12,32 @@
     <div class="container mx-auto min-h-screen">
         <div class="flex justify-center">
             <!-- left -->
-            <div class="w-68 xs:w-88 xl:w-275 min-h-screen">
-            <div class="flex flex-col h-screen xl:pr-3 fixed overflow-y-auto w-68 xs:w-88 xl:w-275">
+
+            <!-- Menu moble -->
+            <div class=" bottom-0 fixed lg:hidden w-full z-50 border-t border-gray-700/60">
+               <nav class="flex bg-black p-2 justify-around">
+               <button class="h-10 w-10 rounded-full hover:bg-abu-200/50 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6.5 w-6.5 my-auto flex items-center m-auto " viewBox="0 0 24 24" fill="currentColor">
+                    <path  d="M22.58 7.35L12.475 1.897c-.297-.16-.654-.16-.95 0L1.425 7.35c-.486.264-.667.87-.405 1.356.18.335.525.525.88.525.16 0 .324-.038.475-.12l.734-.396 1.59 11.25c.216 1.214 1.31 2.062 2.66 2.062h9.282c1.35 0 2.444-.848 2.662-2.088l1.588-11.225.737.398c.485.263 1.092.082 1.354-.404.263-.486.08-1.093-.404-1.355zM12 15.435c-1.795 0-3.25-1.455-3.25-3.25s1.455-3.25 3.25-3.25 3.25 1.455 3.25 3.25-1.455 3.25-3.25 3.25z">
+                    </svg>
+               </button>
+               <button class="h-10 w-10 rounded-full hover:bg-abu-200/50 ">
+                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6.5 w-6.5 my-auto flex items-center m-auto "><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+               </button>
+               <button class="h-10 w-10 rounded-full hover:bg-abu-200/50 ">
+                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6.5 w-6.5 m-auto"><g><path d="M21.697 16.468c-.02-.016-2.14-1.64-2.103-6.03.02-2.532-.812-4.782-2.347-6.335C15.872 2.71 14.01 1.94 12.005 1.93h-.013c-2.004.01-3.866.78-5.242 2.174-1.534 1.553-2.368 3.802-2.346 6.334.037 4.33-2.02 5.967-2.102 6.03-.26.193-.366.53-.265.838.102.308.39.515.712.515h4.92c.102 2.31 1.997 4.16 4.33 4.16s4.226-1.85 4.327-4.16h4.922c.322 0 .61-.206.71-.514.103-.307-.003-.645-.263-.838zM12 20.478c-1.505 0-2.73-1.177-2.828-2.658h5.656c-.1 1.48-1.323 2.66-2.828 2.66zM4.38 16.32c.74-1.132 1.548-3.028 1.524-5.896-.018-2.16.644-3.982 1.913-5.267C8.91 4.05 10.397 3.437 12 3.43c1.603.008 3.087.62 4.18 1.728 1.27 1.285 1.933 3.106 1.915 5.267-.024 2.868.785 4.765 1.525 5.896H4.38z"></path></g></svg>
+               </button>
+               <button class="h-10 w-10 rounded-full hover:bg-abu-200/50 ">
+                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6.5 w-6.5 m-auto"><g><path d="M19.25 3.018H4.75C3.233 3.018 2 4.252 2 5.77v12.495c0 1.518 1.233 2.753 2.75 2.753h14.5c1.517 0 2.75-1.235 2.75-2.753V5.77c0-1.518-1.233-2.752-2.75-2.752zm-14.5 1.5h14.5c.69 0 1.25.56 1.25 1.25v.714l-8.05 5.367c-.273.18-.626.182-.9-.002L3.5 6.482v-.714c0-.69.56-1.25 1.25-1.25zm14.5 14.998H4.75c-.69 0-1.25-.56-1.25-1.25V8.24l7.24 4.83c.383.256.822.384 1.26.384.44 0 .877-.128 1.26-.383l7.24-4.83v10.022c0 .69-.56 1.25-1.25 1.25z"></path></g></svg>
+               </button>
+               </nav>
+            </div>
+            <!-- /Menu moble -->
+            <div class="w-68 xs:w-88 xl:w-275 min-h-screen hidden lg:block">
+            <div class="flex flex-col h-screen xl:pr-3 fixed overflow-y-auto w-68 xs:w-88 lg:w-[150px] xl:w-275 ">
                 <!-- Sidebar -->
-                <nav class="space-y-3 ml-3">
-                    <div class="flex justify-between items-center">
+                <nav class="space-y-3 ml-0 md:ml-3 ">
+                    <div class="lg:flex justify-between items-center">
                         <!-- logo -->
                     <button href="#" class="hover:bg-primary/10 hover:rounded-full p-2 " >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9" viewBox="0 0 24 24" fill="currentColor">
@@ -24,7 +45,7 @@
                             </svg>
                     </button>
                      <!-- darkmode -->
-                     <label class="swap swap-rotate">          
+                     <label class="swap swap-rotate hidden md:block">          
                         <input type="checkbox"  checked="checked" id="showCheckoutHistory" name="showCheckoutHistory"/>
                         <!-- sun icon -->
                         <svg class="swap-on fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
@@ -43,14 +64,14 @@
                                 <path  d="M22.58 7.35L12.475 1.897c-.297-.16-.654-.16-.95 0L1.425 7.35c-.486.264-.667.87-.405 1.356.18.335.525.525.88.525.16 0 .324-.038.475-.12l.734-.396 1.59 11.25c.216 1.214 1.31 2.062 2.66 2.062h9.282c1.35 0 2.444-.848 2.662-2.088l1.588-11.225.737.398c.485.263 1.092.082 1.354-.404.263-.486.08-1.093-.404-1.355zM12 15.435c-1.795 0-3.25-1.455-3.25-3.25s1.455-3.25 3.25-3.25 3.25 1.455 3.25 3.25-1.455 3.25-3.25 3.25z">
                                 </svg>
                         </div>
-                                <h1 class="font-bold text-xl mb-1 ">Home</h1>
+                                <h1 class="font-bold text-xl mb-1 hidden md:block ">Home</h1>
                         </button>
                     </div> 
                 <!-- icon -->
                     <div>
                         <button href="#" class="flex hover:bg-base-200 hover:rounded-full p-2 pr-6  space-x-5 items-center">
                             <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6.5 w-6.5 "><g><path d="M21 7.337h-3.93l.372-4.272c.036-.412-.27-.775-.682-.812-.417-.03-.776.27-.812.683l-.383 4.4h-6.32l.37-4.27c.037-.413-.27-.776-.68-.813-.42-.03-.777.27-.813.683l-.382 4.4H3.782c-.414 0-.75.337-.75.75s.336.75.75.75H7.61l-.55 6.327H3c-.414 0-.75.336-.75.75s.336.75.75.75h3.93l-.372 4.272c-.036.412.27.775.682.812l.066.003c.385 0 .712-.295.746-.686l.383-4.4h6.32l-.37 4.27c-.036.413.27.776.682.813l.066.003c.385 0 .712-.295.746-.686l.382-4.4h3.957c.413 0 .75-.337.75-.75s-.337-.75-.75-.75H16.39l.55-6.327H21c.414 0 .75-.336.75-.75s-.336-.75-.75-.75zm-6.115 7.826h-6.32l.55-6.326h6.32l-.55 6.326z"></path></g></svg>
-                                <h1 class="font-normal text-xl mb-1 ">Explore</h1>
+                                <h1 class="font-normal text-xl mb-1 hidden md:block ">Explore</h1>
                         </button>
                     </div> 
                     
@@ -61,7 +82,7 @@
                                 <div class="indicator-item badge badge-primary font-semibold text-[8px] p-1 h-4 w-4">1</div> 
                                 <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6.5 w-6.5"><g><path d="M21.697 16.468c-.02-.016-2.14-1.64-2.103-6.03.02-2.532-.812-4.782-2.347-6.335C15.872 2.71 14.01 1.94 12.005 1.93h-.013c-2.004.01-3.866.78-5.242 2.174-1.534 1.553-2.368 3.802-2.346 6.334.037 4.33-2.02 5.967-2.102 6.03-.26.193-.366.53-.265.838.102.308.39.515.712.515h4.92c.102 2.31 1.997 4.16 4.33 4.16s4.226-1.85 4.327-4.16h4.922c.322 0 .61-.206.71-.514.103-.307-.003-.645-.263-.838zM12 20.478c-1.505 0-2.73-1.177-2.828-2.658h5.656c-.1 1.48-1.323 2.66-2.828 2.66zM4.38 16.32c.74-1.132 1.548-3.028 1.524-5.896-.018-2.16.644-3.982 1.913-5.267C8.91 4.05 10.397 3.437 12 3.43c1.603.008 3.087.62 4.18 1.728 1.27 1.285 1.933 3.106 1.915 5.267-.024 2.868.785 4.765 1.525 5.896H4.38z"></path></g></svg>
                               </div>
-                                <h1 class="font-normal text-xl mb-1 ">Notifications</h1>
+                                <h1 class="font-normal text-xl mb-1 hidden md:block ">Notifications</h1>
                                   
                         </button>
                     </div> 
@@ -70,7 +91,7 @@
                     <div>
                         <button href="#" class="flex hover:bg-base-200 hover:rounded-full p-2 pr-6  space-x-5 items-center">
                             <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6.5 w-6.5"><g><path d="M19.25 3.018H4.75C3.233 3.018 2 4.252 2 5.77v12.495c0 1.518 1.233 2.753 2.75 2.753h14.5c1.517 0 2.75-1.235 2.75-2.753V5.77c0-1.518-1.233-2.752-2.75-2.752zm-14.5 1.5h14.5c.69 0 1.25.56 1.25 1.25v.714l-8.05 5.367c-.273.18-.626.182-.9-.002L3.5 6.482v-.714c0-.69.56-1.25 1.25-1.25zm14.5 14.998H4.75c-.69 0-1.25-.56-1.25-1.25V8.24l7.24 4.83c.383.256.822.384 1.26.384.44 0 .877-.128 1.26-.383l7.24-4.83v10.022c0 .69-.56 1.25-1.25 1.25z"></path></g></svg>
-                                <h1 class="font-normal text-xl mb-1 ">Messages</h1>
+                                <h1 class="font-normal text-xl mb-1 hidden md:block ">Messages</h1>
                         </button>
                     </div> 
                  
@@ -78,7 +99,7 @@
                     <div>
                         <button href="#" class="flex hover:bg-base-200 hover:rounded-full p-2 pr-6  space-x-5 items-center">  
                             <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6.5 h-6.5"><g><path d="M19.9 23.5c-.157 0-.312-.05-.442-.144L12 17.928l-7.458 5.43c-.228.164-.53.19-.782.06-.25-.127-.41-.385-.41-.667V5.6c0-1.24 1.01-2.25 2.25-2.25h12.798c1.24 0 2.25 1.01 2.25 2.25v17.15c0 .282-.158.54-.41.668-.106.055-.223.082-.34.082zM12 16.25c.155 0 .31.048.44.144l6.71 4.883V5.6c0-.412-.337-.75-.75-.75H5.6c-.413 0-.75.338-.75.75v15.677l6.71-4.883c.13-.096.285-.144.44-.144z"></path></g></svg>
-                                <h1 class="font-normal text-xl mb-1 ">Bookmarks</h1>
+                                <h1 class="font-normal text-xl mb-1 hidden md:block ">Bookmarks</h1>
                         </button>
                     </div> 
                   
@@ -92,7 +113,7 @@
                                     </g>
                                   </svg>
                                 
-                                <h1 class="font-normal text-xl mb-1 ">Lists</h1>
+                                <h1 class="font-normal text-xl mb-1 hidden md:block ">Lists</h1>
                         </button>
                     </div> 
                   
@@ -100,32 +121,32 @@
                     <div>
                         <button href="#" class="flex hover:bg-base-200 hover:rounded-full p-2 pr-6  space-x-5 items-center">
                             <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-6.5 h-6.5"><g><path d="M12 11.816c1.355 0 2.872-.15 3.84-1.256.814-.93 1.078-2.368.806-4.392-.38-2.825-2.117-4.512-4.646-4.512S7.734 3.343 7.354 6.17c-.272 2.022-.008 3.46.806 4.39.968 1.107 2.485 1.256 3.84 1.256zM8.84 6.368c.162-1.2.787-3.212 3.16-3.212s2.998 2.013 3.16 3.212c.207 1.55.057 2.627-.45 3.205-.455.52-1.266.743-2.71.743s-2.255-.223-2.71-.743c-.507-.578-.657-1.656-.45-3.205zm11.44 12.868c-.877-3.526-4.282-5.99-8.28-5.99s-7.403 2.464-8.28 5.99c-.172.692-.028 1.4.395 1.94.408.52 1.04.82 1.733.82h12.304c.693 0 1.325-.3 1.733-.82.424-.54.567-1.247.394-1.94zm-1.576 1.016c-.126.16-.316.246-.552.246H5.848c-.235 0-.426-.085-.552-.246-.137-.174-.18-.412-.12-.654.71-2.855 3.517-4.85 6.824-4.85s6.114 1.994 6.824 4.85c.06.242.017.48-.12.654z"></path></g></svg>
-                                <h1 class="font-normal text-xl mb-1 ">Profile</h1>
+                                <h1 class="font-normal text-xl mb-1 hidden md:block ">Profile</h1>
                         </button>
                     </div> 
                 <!-- icon -->
                     <div>
                         <button href="#" class="flex hover:bg-base-200 hover:rounded-full p-2 pr-6  space-x-5 items-center">
                             <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6.5 w-6.5"><g><circle cx="17" cy="12" r="1.5"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="7" cy="12" r="1.5"></circle><path d="M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z"></path></g></svg>
-                                <h1 class="font-normal text-xl mb-1 ">More</h1>
+                                <h1 class="font-normal text-xl mb-1 hidden md:block ">More</h1>
                         </button>
                     </div> 
                     <!-- /Sidebar -->
                     <!-- button -->
-                    <button class="btn btn-primary capitalize text-[17px] font-bold rounded-full w-11/12">Tweet</button>
+                    <button class="btn btn-primary capitalize text-[17px] font-bold rounded-full w-full md:w-11/12">Tweet</button>
                   
                 </nav> 
                 <!-- Profile User -->
                 <div class="dropdown dropdown-top mt-auto">
                     <div tabindex="0" class="flex mt-auto justify-between mb-4 items-center rounded-full hover:bg-base-200 px-3 py-2 cursor-pointer">
                         <div class="flex gap-4 ">
-                    <img class="h-10 w-10 rounded-full my-auto" src="asset/profile.jpeg" alt="">
-                        <div>
+                    <img class="h-10 w-10 rounded-full my-auto " src="asset/profile.jpeg" alt="">
+                        <div class="hidden md:block">
                             <h1 class="font-semibold text-[15px]">Candra Herdiana</h1>
                             <h2 class="opacity-50">@cand_99</h2>
                         </div>
                     </div>
-                        <div>
+                        <div class="hidden md:block">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                             </svg>
@@ -171,7 +192,7 @@
             <!-- /left -->
             <!-- middle -->
             <div class="w-full sm:w-600 h-screen border-opacity-60 border-gray-700 ">
-                <div class="flex justify-between items-center px-4 py-3 sticky top-0 bg-black/30 backdrop-blur border-r border-l border-opacity-60 border-gray-700">
+                <div class="flex justify-between items-center px-4 py-3 sticky top-0 bg-black/50 backdrop-blur lg:border-r lg:border-l border-opacity-60 border-gray-700 z-50">
                         <!-- Title -->
             <h2 class="font-bold text-xl">
                 Home
@@ -189,10 +210,15 @@
                 </div>
                 </div>
                 <!--input status -->
-                <div class="flex w-full  px-4  space-x-4 border-b border-gray-700 border-opacity-60 border-r border-l">
-                    <img class="w-12 h-12 rounded-full" src="asset/profile.jpeg" alt="">
-                    <div class="flex flex-col w-10/12">
-                        <form action="">
+                <div class="flex w-full  px-4  space-x-4 border-b border-gray-700 border-opacity-60  lg:border-r lg:border-l">
+                      <!-- Input status Mobile -->
+                      <div class="lg:hidden hover:opacity-75 fixed flex bottom-16 right-5  h-12 w-12 bg-primary rounded-full z-50">
+                        <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 m-auto " ><g><path d="M8.8 7.2H5.6V3.9c0-.4-.3-.8-.8-.8s-.7.4-.7.8v3.3H.8c-.4 0-.8.3-.8.8s.3.8.8.8h3.3v3.3c0 .4.3.8.8.8s.8-.3.8-.8V8.7H9c.4 0 .8-.3.8-.8s-.5-.7-1-.7zm15-4.9v-.1h-.1c-.1 0-9.2 1.2-14.4 11.7-3.8 7.6-3.6 9.9-3.3 9.9.3.1 3.4-6.5 6.7-9.2 5.2-1.1 6.6-3.6 6.6-3.6s-1.5.2-2.1.2c-.8 0-1.4-.2-1.7-.3 1.3-1.2 2.4-1.5 3.5-1.7.9-.2 1.8-.4 3-1.2 2.2-1.6 1.9-5.5 1.8-5.7z"></path></g></svg>
+                    </div>
+                      <!-- /Input status Mobile -->
+                    <img class="hidden lg:block w-12 h-12 rounded-full" src="asset/profile.jpeg" alt="">
+                    <div class="lg:flex hidden flex-col w-10/12 ">
+                        <form action="" >
                             <div class="form-control p-[8px]">
                                 <input type="text" placeholder="What's Happening?" class="bg-transparent focus:ring-0 focus:outline-none text-xl placeholder:opacity-60">
                                 
@@ -205,7 +231,7 @@
                                  Everyone can reply
                               </button>
                         </div>
-                          <div class="flex text-primary px-[8px] py-[12px] justify-between">
+                          <div class="flex text-primary px-[8px] py-[12px] justify-between ">
                               <div>
                                   <div data-tip="Media" class="tooltip tooltip-bottom">
                                     <button class=" hover:bg-primary/25 rounded-full w-7 h-7 flex">
@@ -245,13 +271,13 @@
                 </div>
              <!-- /input status -->
              <!-- Content Tweet --> 
-             <div class="flex py-4  border-b border-r border-l border-gray-700 border-opacity-60 pb-4 hover:bg-base-200/10 cursor-pointer"> 
-                <img class="w-12 h-12 rounded-full mx-4" src="https://pbs.twimg.com/profile_images/1489375145684873217/3VYnFrzx_400x400.jpg" alt="">
+             <div class="flex py-4  border-b lg:border-r lg:border-l border-gray-700 border-opacity-60 pb-4 hover:bg-base-200/10 cursor-pointer"> 
+                <img class="w-12 h-12 rounded-full mx-1 lg:mx-4" src="https://pbs.twimg.com/profile_images/1489375145684873217/3VYnFrzx_400x400.jpg" alt="">
                <div class="flex-row  mx-3 ">
                    <!-- profile -->
                    <div class="flex justify-between items-center">
                        <div class="flex gap-3">
-                        <div class="dropdown dropdown-hover ">
+                        <div class="dropdown lg:dropdown-hover  ">
                            <a href="#" tabindex="1" class="text-[15px]  font-bold hover:underline flex items-center ">Elon Musk <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                           </svg></span></a>
@@ -260,7 +286,7 @@
                            <div class="flex justify-between ">
                             <div class="flex-row justify-start">
                                 <img class="w-14 h-14 rounded-full " src="https://pbs.twimg.com/profile_images/1489375145684873217/3VYnFrzx_400x400.jpg" alt="">
-                                <a href="#" tabindex="1" class="text-[15px]   font-bold hover:underline ">Elon Musk</a>
+                                <a href="#" tabindex="1" class="text-[15px]  font-bold hover:underline ">Elon Musk</a>
                                 <p class="text-abu-200 font-normal text-[15px] ">@elonmusk </p>
                             </div>
                             <div class="btn-sm group">
@@ -278,7 +304,7 @@
                           </ul>
                           <!-- /modal -->
                         </div>
-                           <p class="text-abu-200 font-normal">@elonmusk <span>.4h</span></p>
+                           <p class="text-abu-200 font-normal text-sm lg:text-base">@elonmusk <span>.4h</span></p>
                         </div>
                        <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group transition-all">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto fill-abu-200 text-abu-200 group-hover:fill-primary transition-all  " viewBox="0 0 20 20" fill="currentColor">
@@ -289,7 +315,7 @@
                     <!-- /profile -->
                     <!-- tweet -->
                  
-                        <p class="mb-4 text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae culpa iure mollitia consequuntur provident blanditiis enim porro nihil corporis! Eos.</p>
+                        <p class="mb-4 text-[14px] lg:text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae culpa iure mollitia consequuntur provident blanditiis enim porro nihil corporis! Eos.</p>
                    
                     <!-- /tweet -->
                    <!-- image -->
@@ -298,35 +324,45 @@
                    </div>
                    <!-- /image -->
                    <!-- like retweet dll -->
-                   <div class="flex justify-between w-10/12 ">
+                   <div class="flex justify-between w-full lg:w-10/12 ">
+                    <div data-tip="Reply" class="tooltip tooltip-bottom">
                        <div class="flex items-center group cursor-pointer gap-1 text-gray-400 ">
                                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-primary h-8 w-8 group-hover:bg-primary/20 p-2 rounded-full "><g><path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>
                             <span class="group-hover:text-primary text-[13px] font-normal">25</span>
                         </div>  
+                        </div>  
+                        <div data-tip="Retweet" class="tooltip tooltip-bottom">
                        <div class="flex items-center group cursor-pointer gap-1 text-gray-400">
                                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-hijau h-8 w-8 group-hover:bg-hijau/20 p-2 rounded-full"><g><path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></g></svg>
                             <span class="group-hover:text-hijau text-[13px] font-normal">25</span>
                         </div>  
+                        </div>  
+                        <div data-tip="Like" class="tooltip tooltip-bottom">
                        <div class="flex items-center group cursor-pointer gap-1 text-gray-400">
                                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-pink2 h-8 w-8 group-hover:bg-pink2/20 p-2 rounded-full"><g><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>
                             <span class="group-hover:text-pink2 text-[13px] font-normal">25</span>
                         </div>  
-                       <div class="flex items-center group cursor-pointer gap-1 text-gray-400">
+                        </div>  
+                        <div data-tip="Share" class="tooltip tooltip-bottom hidden lg:block">
+                       <div class="hidden lg:flex items-center group cursor-pointer gap-1 text-gray-400">
                                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-primary h-8 w-8 group-hover:bg-primary/20 p-2 rounded-full "><g><path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path></g></svg>
-                          
+                        </div>  
+                        </div>  
+                        <div class="lg:hidden flex items-center group cursor-pointer gap-1 text-gray-400">
+                               <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-primary h-8 w-8 group-hover:bg-primary/20 p-2 rounded-full "><g><g><path d="M18.466 14.928c-1.118 0-2.106.525-2.765 1.328l-6.587-3.358c.066-.27.11-.55.11-.842 0-.287-.042-.562-.106-.83l6.575-3.32c.658.81 1.65 1.34 2.774 1.34 1.978 0 3.586-1.606 3.586-3.58s-1.608-3.58-3.586-3.58-3.586 1.606-3.586 3.58c0 .314.054.614.13.904L8.463 9.876c-.656-.846-1.672-1.4-2.824-1.4-1.98 0-3.588 1.606-3.588 3.58s1.61 3.58 3.587 3.58c1.146 0 2.158-.55 2.815-1.39l6.56 3.343c-.08.294-.135.598-.135.918 0 1.974 1.608 3.58 3.586 3.58s3.586-1.606 3.586-3.58-1.61-3.58-3.586-3.58zm0-11.34c1.15 0 2.086.932 2.086 2.078s-.936 2.08-2.086 2.08-2.086-.934-2.086-2.08.935-2.08 2.086-2.08zM5.64 14.134c-1.15 0-2.088-.933-2.088-2.08s.937-2.08 2.087-2.08 2.085.935 2.085 2.08-.936 2.08-2.086 2.08zm12.826 6.452c-1.15 0-2.086-.933-2.086-2.08s.936-2.08 2.086-2.08 2.086.935 2.086 2.08-.936 2.08-2.086 2.08z"></path></g></g></svg>
                         </div>  
                     </div>
                    <!-- /like dll -->
                </div>
              </div>
              <!-- Content Tweet --> 
-             <div class="flex py-4  border-b border-r border-l border-gray-700 border-opacity-60 pb-4 hover:bg-base-200/10 cursor-pointer"> 
-                <img class="w-12 h-12 rounded-full mx-4" src="asset/profile.jpeg" alt="">
+             <div class="flex py-4  border-b lg:border-r lg:border-l border-gray-700 border-opacity-60 pb-4 hover:bg-base-200/10 cursor-pointer"> 
+                <img class="w-12 h-12 rounded-full mx-1 lg:mx-4" src="asset/profile.jpeg" alt="">
                <div class="flex-row  mx-3 ">
                    <!-- profile -->
                    <div class="flex justify-between items-center">
                        <div class="flex gap-3">
-                        <div class="dropdown dropdown-hover ">
+                        <div class="dropdown lg:dropdown-hover z-10 ">
                            <a href="#" tabindex="1" class="text-[15px]  font-bold hover:underline flex items-center ">Candra Herdiana <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                           </svg></span></a>
@@ -353,7 +389,7 @@
                           </ul>
                           <!-- /modal -->
                         </div>
-                           <p class="text-abu-200 font-normal">@cand_99 <span>.Nov 7</span></p>
+                           <p class="text-abu-200 font-normal text-sm lg:text-base">@cand_99 <span>.Nov 7</span></p>
                         </div>
                        <div class="flex h-8 w-8 hover:bg-primary/20 rounded-full group transition-all">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto fill-abu-200 text-abu-200 group-hover:fill-primary transition-all  " viewBox="0 0 20 20" fill="currentColor">
@@ -364,7 +400,7 @@
                     <!-- /profile -->
                     <!-- tweet -->
                  
-                        <p class="mb-4 text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae culpa iure mollitia consequuntur provident blanditiis enim porro nihil corporis! Eos.</p>
+                        <p class="mb-4 text-[14px] lg:text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae culpa iure mollitia consequuntur provident blanditiis enim porro nihil corporis! Eos.</p>
                    
                     <!-- /tweet -->
                    <!-- image -->
@@ -373,23 +409,33 @@
                    </div>
                    <!-- /image -->
                    <!-- like retweet dll -->
-                   <div class="flex justify-between w-10/12 ">
+                   <div class="flex justify-between w-full lg:w-10/12 ">
+                    <div data-tip="Reply" class="tooltip tooltip-bottom">
                        <div class="flex items-center group cursor-pointer gap-1 text-gray-400 ">
                                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-primary h-8 w-8 group-hover:bg-primary/20 p-2 rounded-full "><g><path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>
                             <span class="group-hover:text-primary text-[13px] font-normal">25</span>
                         </div>  
+                        </div>  
+                        <div data-tip="Retweet" class="tooltip tooltip-bottom">
                        <div class="flex items-center group cursor-pointer gap-1 text-gray-400">
                                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-hijau h-8 w-8 group-hover:bg-hijau/20 p-2 rounded-full"><g><path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></g></svg>
                             <span class="group-hover:text-hijau text-[13px] font-normal">25</span>
                         </div>  
+                        </div>  
+                        <div data-tip="Like" class="tooltip tooltip-bottom">
                        <div class="flex items-center group cursor-pointer gap-1 text-gray-400">
                                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-pink2 h-8 w-8 group-hover:bg-pink2/20 p-2 rounded-full"><g><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>
                             <span class="group-hover:text-pink2 text-[13px] font-normal">25</span>
                         </div>  
-                       <div class="flex items-center group cursor-pointer gap-1 text-gray-400">
-                               <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-primary h-8 w-8 group-hover:bg-primary/20 p-2 rounded-full "><g><path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path></g></svg>
-                          
                         </div>  
+                        <div data-tip="Share" class="tooltip tooltip-bottom hidden lg:block">
+                       <div class=" lg:flex items-center group cursor-pointer gap-1 text-gray-400">
+                               <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-primary h-8 w-8 group-hover:bg-primary/20 p-2 rounded-full "><g><path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path></g></svg>
+                        </div>  
+                        </div>  
+                        <div class="lg:hidden flex items-center group cursor-pointer gap-1 text-gray-400">
+                            <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="group-hover:fill-primary h-8 w-8 group-hover:bg-primary/20 p-2 rounded-full "><g><g><path d="M18.466 14.928c-1.118 0-2.106.525-2.765 1.328l-6.587-3.358c.066-.27.11-.55.11-.842 0-.287-.042-.562-.106-.83l6.575-3.32c.658.81 1.65 1.34 2.774 1.34 1.978 0 3.586-1.606 3.586-3.58s-1.608-3.58-3.586-3.58-3.586 1.606-3.586 3.58c0 .314.054.614.13.904L8.463 9.876c-.656-.846-1.672-1.4-2.824-1.4-1.98 0-3.588 1.606-3.588 3.58s1.61 3.58 3.587 3.58c1.146 0 2.158-.55 2.815-1.39l6.56 3.343c-.08.294-.135.598-.135.918 0 1.974 1.608 3.58 3.586 3.58s3.586-1.606 3.586-3.58-1.61-3.58-3.586-3.58zm0-11.34c1.15 0 2.086.932 2.086 2.078s-.936 2.08-2.086 2.08-2.086-.934-2.086-2.08.935-2.08 2.086-2.08zM5.64 14.134c-1.15 0-2.088-.933-2.088-2.08s.937-2.08 2.087-2.08 2.085.935 2.085 2.08-.936 2.08-2.086 2.08zm12.826 6.452c-1.15 0-2.086-.933-2.086-2.08s.936-2.08 2.086-2.08 2.086.935 2.086 2.08-.936 2.08-2.086 2.08z"></path></g></g></svg>
+                     </div> 
                     </div>
                    <!-- /like dll -->
                </div>
@@ -408,24 +454,24 @@
             <!-- right -->
             <div class="hidden md:block w-290 lg:w-350 h-screen  border-gray-700 border-opacity-60">
                 
-                <div class="flex flex-col fixed overflow-y-auto w-290 lg:w-350 h-screen mt-2 pl-4 ">
-                    <div class="w-full sticky top-0">
-                        <div class="relative mt-1">
-                            <div class="absolute flex items-center h-full pl-4 opacity-60">
+                <div class="flex flex-col fixed overflow-y-auto pb-8 w-290 lg:w-350 h-screen mt-1 pl-4 ">
+                    <div class="w-full sticky top-0 bg-black pb-2 ">
+                        <div class="relative mt-1 ">
+                            <div class="absolute flex items-center h-full pl-4 ">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-transparent"  viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                   </svg>
                             </div>          
-                                <input type="text" placeholder="Search Twitter" class="w-full rounded-full py-2 px-3 bg-abu flex items-center pl-14 text-base h-12 placeholder:opacity-60 focus:outline-none ">
+                                <input type="text" placeholder="Search Twitter" class="w-full rounded-full py-2 px-3 bg-abu flex items-center pl-14 text-base h-12 placeholder:opacity-60 focus:outline-none  ">
                         </div>
                     </div>
                     <!-- Trending -->
-                    <div class=" bg-abu-100 mt-4 rounded-box ">
+                    <div class=" bg-abu-100 mt-4 rounded-box -z-10">
                         <div class="flex justify-between py-3 px-4">
                             <h2 class="text-xl font-bold leading-6 ">Trends for you</h2>
                             <div data-tip="Settings" class="tooltip tooltip-bottom">
                                 <button class="h-8 w-8 hover:bg-white/10 rounded-full flex ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                       </svg>
@@ -528,7 +574,7 @@
                             <div class="flex gap-4 ">
                         <img class="h-10 w-10 rounded-full my-auto" src="https://pbs.twimg.com/profile_images/1260876848776589313/EuWXY21V_400x400.jpg" alt="">
                             <div>
-                                <a href="#" class="font-semibold text-[15px] hover:underline flex items-center">Jorfe Lorenzo<span>
+                                <a href="#" class="font-semibold text-[15px] hover:underline flex items-center">Jorge Lorenzo<span>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                     <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                   </svg></span></a>
