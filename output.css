@@ -453,7 +453,6 @@ html {
   --su: 174 100% 29%;
   --wa: 36 100% 50%;
   --er: 0 100% 50%;
-  hijau: ##00ba7c;
 }
 
 *, ::before, ::after {
@@ -1911,16 +1910,6 @@ html {
   margin-right: 0.75rem;
 }
 
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
 .ml-0 {
   margin-left: 0px;
 }
@@ -2300,8 +2289,14 @@ html {
   padding: 1rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .px-3 {
@@ -2319,19 +2314,9 @@ html {
   padding-right: 1rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .px-\[8px\] {

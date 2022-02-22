@@ -62,7 +62,6 @@ module.exports = {
           'success': '#009485',
           'warning': '#ff9900',
           'error': '#FF0000',
-          'hijau': '##00ba7c',
          
         },
       },
